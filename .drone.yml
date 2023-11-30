@@ -83,7 +83,7 @@ steps:
       dockerfile: docker/docker/Dockerfile.linux.amd64
       password:
         from_secret: docker_password
-      repo: plugins/docker
+      repo: rspamd/drone-docker-plugin
       username:
         from_secret: docker_username
     when:
@@ -145,7 +145,7 @@ steps:
       dockerfile: docker/docker/Dockerfile.linux.arm64
       password:
         from_secret: docker_password
-      repo: plugins/docker
+      repo: rspamd/drone-docker-plugin
       username:
         from_secret: docker_username
     when:
